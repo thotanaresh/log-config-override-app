@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns="http://www.mulesoft.org/schema/mule/core"
+      xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="
+        http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+
+    <flow name="main-flow" doc:id="main-flow">
+        <scheduler doc:name="Scheduler">
+            <scheduling-strategy>
+                <fixed-frequency frequency="${scheduler.frequency}" timeUnit="MILLISECONDS" />
+            </scheduling-strategy>
+        </scheduler>
+        <logger level="INFO" doc:name="Start Log" message="Flow main-flow - START" />
+        <logger level="DEBUG" doc:name="debug" doc:id="45a56118-f9dd-4d2a-861c-4b963d85fb89" message="Flow main-flow - DEBUG" />
+		<logger level="INFO" doc:name="End Log" message="Flow main-flow - END" />
+    
+</flow>
+
+</mule>

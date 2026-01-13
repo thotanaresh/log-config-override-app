@@ -1,0 +1,7 @@
+scheduler:
+  frequency: "30000"
+  timeUnit: "MILLISECONDS"
+  
+log:
+  defaultLoggerPackage: "org.mule.runtime.core.internal.processor.LoggerMessageProcessor"
+  defaultLoggerLevel: "DEBUG"
